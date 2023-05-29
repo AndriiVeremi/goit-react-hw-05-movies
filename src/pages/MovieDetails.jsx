@@ -20,7 +20,7 @@ const MovieDetails = () => {
   const [moveInfo, setMoveInfo] = useState([]);
 
   const location = useLocation();
-  const buttonBack = useRef(location.state?.from ?? '/movies');
+  const buttonBack = useRef(location.state?.from ?? '/');
 
   useEffect(() => {
     const infoMoves = async () => {
